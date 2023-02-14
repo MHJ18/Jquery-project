@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script> -->
+    <!-- <script src="mins.js"></script> -->
+  </head>
+
+  <body>
+    <div class="container">
+      <p class="good">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere hic
+        autem asperiores vitae similique sunt soluta illum eveniet labore
+        commodi voluptates, aliquid qui ullam excepturi nobis, reiciendis cumque
+        repellat nesciunt?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere hic
+        autem asperiores vitae similique sunt soluta illum eveniet labore
+        commodi voluptates, aliquid qui ullam excepturi nobis, reiciendis cumque
+        repellat nesciunt?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere hic
+        autem asperiores vitae similique sunt soluta illum eveniet labore
+        commodi voluptates, aliquid qui ullam excepturi nobis, reiciendis cumque
+        repellat nesciunt?
+      </p>
+      <button>click me</button>
+      <button>click ok</button>
+      <div class="toggle">
+        <p class="data">
+          Secure Digital, officially abbreviated as SD, is a proprietary
+          non-volatile flash memory card format developed by the SD Association
+          (SDA) for use in portable devices. The standard was introduced in
+          August 1999 by joint efforts between SanDisk, Panasonic (Matsushita)
+          and Toshiba as an improvement over MultiMediaCards (MMCs),[1] and has
+          become the industry standard. The three companies formed SD-3C, LLC, a
+          company that licenses and enforces intellectual property rights
+          associated with SD memory cards and SD host and ancillary products.[2]
+          The companies also formed the SD Association (SDA), a non-profit
+          organization, in January 2000 to promote and create SD Card
+          standards.[3] SDA today has about 1,000 member companies. The SDA uses
+          several trademarked logos owned and licensed by SD-3C to enforce
+          compliance with its specifications and assure users of
+          compatibility.[4]
+        </p>
+      </div>
+      <button class="btn">Toggle</button>
+    </div>
+  </body>
+  <script>
+    jQuery(document).ready(function () {
+      //   $("p").on("click", function (e) {
+      //     $(this).text("Text function of jquery is functioning properly");
+      //     $(this).hide();
+      //     $("button").text("show me");
+      //   });
+      //   $("button").click(() => {
+      //     $("p").show();
+      //     $(this).html("hide me");
+      //   });
+      //   $("p:first").on({
+      //     click: function () {
+      //       console.log("why u clicked me bcz i am the first thats why");
+      //     },
+      //     mouseenter: function () {
+      //       console.log("wallah u are touching me");
+      //     },
+      //     function() {
+      //       console.log("hi");
+      //     },
+      //   });
+
+      $(".btn").on("click", function (params) {
+        console.log($(".toggle").html());
+
+        // $(".toggle")
+        //   .css({ "background-color": "#457b9d", color: "white" })
+        //   .animate({ width: "20rem", "background-color": "black" }, 2000);
+        // $(".data").css("color");
+        $(".toggle").animate({ width: "20rem" }, 2000);
+        $(".data").animate({ color: "red" }, 1000);
+        $(".data").css("color");
+      });
+    });
+  </script>
+</html>
